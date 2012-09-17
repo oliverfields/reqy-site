@@ -10,17 +10,12 @@ font-variant: normal;
 font-weight: normal;
 line-height: 1.7em;
 border-top: solid 3px #ff2b06;
-
+color: #333;
 }
 a {
-border-bottom : 1px dotted #000;
-text-decoration : none;
-color : #000;
-font-weight : 600;
 }
 a:hover {
 color : #e12000;
-border-bottom : 1px dashed #e12000;
 background-color : #f7f7f7;
 }
 hr{
@@ -81,17 +76,16 @@ font-weight:normal;
 font-size : 28px;
 font-weight:normal;
 line-height:32px;
+color: #666;
 }
 #content h3, #content h4 {
 font-size : 20px;
 margin : 15px 0 10px 0;
 font-weight:normal;
+color: #666;
 }
 #content h4 {
 font-size : 18px;
-}
-#content h1:hover, #content h2:hover, #content h3:hover, #content h4:hover {
-color : #e12000;
 }
 #content .indent {
 padding-left: 10px;
@@ -185,10 +179,9 @@ width : 130px;
 #menu li a {
 font-size : 20px;
 font-weight : 400;
+color: #333;
 display : block;
 padding : 15px 0 15px 0;
-border-bottom : none;
-}
-#menu li a:hover {
-background-color : #f7f7f7;
+border-bottom: none;
+text-decoration: none;
 }
