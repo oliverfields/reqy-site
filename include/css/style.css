@@ -57,7 +57,6 @@ padding-left: 40px;
 }
 #content {
 float : left;
-min-height : 420px;
 padding: 0 40px 30px 0;
 width: 560px;
 }
@@ -166,7 +165,7 @@ color: #999;
 #menu {
 position: absolute;
 top: 0px;
-margin-left: 510px ! important;
+margin-left: 380px ! important;
 padding : 9px 0 0;
 margin-top: 15px ! important;
 }
