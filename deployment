@@ -1,0 +1,27 @@
+#!/bin/bash
+
+source_dir="site"
+ftp_public_web_dir="/vhosts/reqy/htdocs"
+password="$(cat ftp-deployment-password)"
+
+error(){
+  echo "Error: $*"
+  exit 1
+}
+
+if [ "$password" = '' ]; then
+  error "No password found, add password to 'ftp-deployment-password' file"
+fi
+
+if ! [ -e "$source_dir" ]; then
+  error "Directory '$source_dir' not found"
+fi
+ 
+cd "$source_dir"
+{
+  echo cd $ftp_public_web_dir
+  echo mirror -R -e -a
+  find . -type d | grep -v '^\.$' | sed 's#^\./#chmod\ 755\ #'
+  find . -type f | sed 's#^\./#chmod\ 644\ #'
+  echo quit
+} | lftp -u "phnd.net,$password" phnd.net -e 'set ftp:ssl-allow no' 2>&1 /dev/null || error 'FTP mirror failed'
