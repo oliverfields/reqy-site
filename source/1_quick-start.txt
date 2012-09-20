@@ -1,0 +1,56 @@
+.. attention::
+  The quick start tries to demonstrate basic use of *reqy*. Please ensure *reqy* is installed as per instructions in the INSTALL_ file before proceeding.
+
+  .. _INSTALL: https://github.com/oliverfields/reqy/blob/master/INSTALL
+
+
+Create a new requirements repository
+------------------------------------
+
+A *reqy* repository is just a directory containing stuff that *reqy* needs, run the following commands in a terminal to create a new repository.
+
+| $ mkdir my_reqs
+| $ cd my_reqs
+| $ reqy init
+
+
+Add requirements to repository
+------------------------------
+
+Requirements are text files containing attributes (key value pairs), they can be organized by requirement packages. Requirements packages can be nested. All requirements and requirement packages must be created in the *requirements* directory.
+
+| $ cd my_reqs/requirements
+| $ reqy new package 'my server'
+| $ reqy new req 'my server/debian os'
+
+The above created the following.
+
+* A package consisting of a directory called **my server** and the package attributes file **my server/attributes.pkg**. Each package contains an *attributes.pkg* file that contains the package attributes
+
+* A requirement consisting of the file **my server/debian os** wich will contain the requirement attributes
+
+Both package and requirements must have **Description** and **Rationale** attributes set. Open the **attributes.pkg** file and add the following.
+
+| Description: Web server for the new application
+| Rationale: Required for new application
+
+Add something similarly inane to **my server/debian os**. Once done the repository will be in a working state.
+
+
+Set requirement status
+----------------------
+
+As the project progresses requirements change status, to record this the *Status* attribute must be set, this also applies to requirements packages.
+
+* approved
+* elaboration
+* implementation
+* rejected
+* postponed
+
+
+
+Link requirement to document
+
+
+Generate artifacts
