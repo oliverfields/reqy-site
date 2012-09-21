@@ -9,6 +9,15 @@ error(){
   exit 1
 }
 
+clean_exit() {
+  echo ''
+  exit 0
+}
+
+trap clean_exit SIGINT
+
+read -p 'Press Enter to start production environment deployment or Ctrl+C to skip'
+
 if [ "$password" = '' ]; then
   error "No password found, add password to 'ftp-deployment-password' file"
 fi
