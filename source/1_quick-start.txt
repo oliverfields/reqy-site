@@ -1,3 +1,5 @@
+Requirements management using *reqy* is briefly explained adding and updating requirements. This quick start provides a high level introduction to just that.
+
 .. attention::
   The quick start tries to demonstrate basic use of *reqy*. Please ensure *reqy* is installed as per instructions in the INSTALL_ file before proceeding.
 
@@ -48,11 +50,73 @@ As the project progresses requirements change status, to record this the *Status
 * rejected
 * postponed
 
+In order to track who and when deciscions where made some of the statuses have additional attributes that must be set. E.g. if status attribute is set to approved, *reqy* insists that the *approved by* attribute also is set in order to track who approved the requirement.
+
+=============== ==================================
+Status          Description
+=============== ==================================
+approved        Successfully completed
+
+                * *Approved by* must also be set
+                * *Approved on* can aslo be set
+elaboration     Needs more investigation before
+                ready for implementation
+implementation  Adequately defined and can be/is
+                beign built
+rejected        Not part of project. Usefull to
+                track also those requirements that
+                didn't make it into the project
+
+                * *Rejected by* must also be set
+                * *Rejected on* can also be set
+postponed       Will be completed at a later date
+
+                * *Postponed by* must also be set
+                * *Postponed on* can also be set
+=============== ==================================
 
 
 Link requirement to document
 ----------------------------
 
+Tracability is crucial to requirements management. *reqy* supports traces (links) from requirements to supporting documentation in the repository.
+
+The **Documents** attribute specifies the documents that are associated with the requirement. *reqy* will check that the documents actually exist. The following setting will add a trace from requirement *my_reqs/requirements/my_server* to *my_reqs/documents/module_design.txt*.
+
+| $ touch my_reqs/documents/module_design.txt
+| $ echo 'Documents: module_design.txt' >> my_reqs/requirements/my_server/attributes.pkg
+
+Multiple documents can be specified by comma seperating them.
+
+| Documents: x.pdf, y.pdf
+
+
+Filter requirements
+-------------------
+Requirements may be listed by status on the command line. The following examples illustrate this.
+
+| $ reqy filter status approved
+
+Use the **not** key word to do a negative filter.
+
+| $ reqy filter status not approved
+
 
 Generate artifacts
 ------------------
+
+For any project that is not trivial the requirements repository will soon become unweildy and hard to understand, this is part of what makes requirements management hard to do without a tool. To aid understanding *reqy* allows artifacts to be generated from the repository. Each artifact can be thought of as a different perspective or view of the requirements.
+
+Artifacts can be generated all at once or one at a time, all artifacts are saved to the *artifacts* directory.
+
+| $ reqy artifact all
+| $ ls artifacts
+
+
+Next steps
+----------
+
+For more information please see the tutorial_ and `user manual`_.
+
+.. _tutorial: /tutorial.html
+.. _`user manual`: /user-manual.html

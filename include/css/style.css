@@ -12,12 +12,6 @@ line-height: 1.7em;
 border-top: solid 3px #ff2b06;
 color: #333;
 }
-a {
-}
-a:hover {
-color : #e12000;
-background-color : #f7f7f7;
-}
 hr{
 margin-top:35px;
 border:0;
@@ -118,24 +112,12 @@ font-weight:normal;
 }
 #content ul{
 list-style:circle;
-margin:0 0 0 25px;
+margin: 5px 0 15px;
+padding: 0 30px;
 }
 #content ol{
 list-style:decimal;
-margin:0 0 0 30px;
-}
-#content .wp-caption {
-background:#f7f7f7;
-border:1px solid #ccc;
-margin:10px;
-text-align:center;
-padding:5px 0 0;
-}
-#content .wp-caption-text {
-margin:0;
-}
-#content .wp-caption a, #content .wp-caption a:hover {
-border-bottom:0;
+margin: 0;
 }
 #content blockquote {
 color:#777;
@@ -192,6 +174,7 @@ text-decoration: none;
 div.attention {
 background-color: #ffc;
 border: solid 2px #ffa;
+border-radius: 5px;
 }
 p.admonition-title {
 display: none;
@@ -200,13 +183,36 @@ div.attention {
 padding: 0 1em;
 }
 div.line-block {
-background-color: #111;
-border: solid 2px #333;
+background-color: #333;
+border: solid 2px #666;
 padding: .5em 0;
+border-radius: 5px;
 }
 div.line-block div.line {
-font-family: courier, mono-space;
-font-size: 14px;
+font-family: mono-space;
+font-size: 11px;
 margin-left: 1em;
 color: lime;
+line-height: 1.4em;
+}
+#content table {
+border: none;
+border-bottom: solid 2px #999;
+}
+#content th,
+#content td {
+text-align: left;
+vertical-align: top;
+padding: 0 5px;
+border: none;
+}
+#content th {
+border-bottom: solid 2px #999;
+}
+#content td {
+border-top: solid 1px #eee;
+padding-bottom: 5px;
+}
+#content table p.first {
+margin-top: 0;
 }
