@@ -152,8 +152,8 @@ color: #999;
 #menu {
 position: absolute;
 top: 0px;
-margin-left: 380px ! important;
-padding : 9px 0 0;
+margin-left: 249px ! important;
+padding : 9px 0 0 0 ! important;
 margin-top: 15px ! important;
 }
 #menu li {
@@ -171,16 +171,21 @@ padding : 15px 0 15px 0;
 border-bottom: none;
 text-decoration: none;
 }
+div.attention,
+div.warning {
+border-radius: 5px;
+padding: 0 1em;
+}
 div.attention {
 background-color: #ffc;
 border: solid 2px #ffa;
-border-radius: 5px;
+}
+div.warning {
+background-color: lightcoral;
+border: solid 2px maroon;
 }
 p.admonition-title {
 display: none;
-}
-div.attention {
-padding: 0 1em;
 }
 div.line-block {
 background-color: #333;
