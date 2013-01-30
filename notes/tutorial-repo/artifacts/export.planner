@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project name="Requirements for project X" project-start="20130118T00000Z" mrproject-version="2"><tasks><task id="1" name="Customer service automation" note="Reqy requirement ref: &#10;&#10;Provide tools and techniques that allow customer interaction.&#10;&#10;Customer interaction should where appropriate be funneled thorough online services to ensure capture of information to allow best possible service leveles and quickest possible response times. Aim to provide sufficent information to service personel to reduce ticket response times by 10%." work="0" start="20130118T00000Z" end="20130118T00000Z" />
+<task id="2" name="Question form" note="Reqy requirement ref: &#10;&#10;Online form where customers can submit tickets.&#10;&#10;Ensure customers submit appropriate information by requireing all necassary fields are completed befor accepting submission." work="0" start="20130118T00000Z" end="20130118T00000Z" />
+<task id="3" name="Ticket system" note="Reqy requirement ref: &#10;&#10;Online system for handling customer tickets.&#10;&#10;All customer service personel need common system to handle tickets." work="0" start="20130118T00000Z" end="20130118T00000Z" />
+<task id="4" name="Sales force automation" note="Reqy requirement ref: &#10;&#10;Online sales data repository.&#10;&#10;Allow sales team to manage contacts and opportunities." work="0" start="20130118T00000Z" end="20130118T00000Z" />
+<task id="5" name="Provide customer info" note="Reqy requirement ref: &#10;&#10;Customer contact details and overview of purchases and purchase history.&#10;&#10;Sales team need access to up to date information about their existing and potential clients." work="0" start="20130118T00000Z" end="20130118T00000Z" />
+</tasks>
+<resources>
+</resources>
+</project>

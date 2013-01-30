@@ -1,0 +1,11 @@
+digraph typical_requirement_lifecycle {
+
+// Nodes
+new [label="New requirement that may be elaborated upon"]
+ready [label="Implementation of a sufficently detailed requirement"]
+approved [label="Requirement met and approved"]
+
+// Arcs
+new->ready
+ready->approved
+}

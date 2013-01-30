@@ -60,23 +60,24 @@ margin : 14px 0 14px 0;
 #content em{
 font-style: italic;
 }
-#content h2 {
-font-size : 24px;
+#content h2 a {
+font-size : 20px;
 margin : 25px 0 10px 0;
 font-weight:normal;
+color: #333;
 }
-#content h1, #content h1 a{
+#content h1, #content h1 a, #contents p.first {
 margin: 1em 0 .5em 0;
-font-size : 24px;
-font-weight:normal;
-line-height:32px;
+font-size: 24px;
+font-weight: normal;
+line-height: 32px;
 color: #666;
 }
 #content h1.title {
 margin: .3em 0 .7em 0;
 font-size : 32px;
 }
-#content h3, #content h4 {
+#content h3 a, #content h4 a{
 font-size : 20px;
 margin : 15px 0 10px 0;
 font-weight:normal;
@@ -125,11 +126,13 @@ border-left:5px solid #ccc;
 margin:15px 30px 0 10px;
 padding-left:20px;
 }
+/*
 #content pre {
 font-family:courier;
 font-size:8px;
 letter-spacing:-1px;
 }
+*/
 #sidebar {
 width : 300px;
 float : right;
@@ -200,6 +203,17 @@ margin-left: 1em;
 color: lime;
 line-height: 1.4em;
 }
+pre.literal-block {
+background-color: #eee;
+border: solid 2px #ccc;
+padding: .5em 0;
+border-radius: 5px;
+font-family: mono-space;
+font-size: 11px;
+padding-left: 1em;
+color: #333;
+line-height: 1.4em;
+}
 #content table {
 border: none;
 border-bottom: solid 2px #999;
@@ -220,4 +234,30 @@ padding-bottom: 5px;
 }
 #content table p.first {
 margin-top: 0;
+}
+div.figure {
+text-align: center;
+border: solid 1px #ccc;
+border-radius: 1px;
+font-size: 11px;
+}
+div.figure img {
+max-width: 530px;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #contents a {
+text-decoration: none;
+}
+#contents ul.simple {
+border: solid 1px #ccc;
+background-color: #eee;
+border-radius: 1px;
+padding: 20px;
+}
+#contents ul.simple li {
+margin-left: 20px;
+}
+#contents ul {
+list-style: circle outside none;
+margin: 5px 0 10px;
+padding: 0 20px;
 }

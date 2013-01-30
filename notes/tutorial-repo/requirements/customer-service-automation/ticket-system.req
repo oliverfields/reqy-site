@@ -1,2 +1,3 @@
 Description: Online system for handling customer tickets.
 Rationale: All customer service personel need common system to handle tickets.
+Documents: design/ticket_screen_sketch.png, design/ticket_screen_confirmation_sketch.png

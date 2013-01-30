@@ -1,0 +1,23 @@
+digraph reqy {
+root="/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo"
+aspect=2
+graph [fontname=Verdana, fontsize=8]
+node [fontname=Verdana, fontsize=8]
+edge [fontname=Verdana, fontsize=8, color="#707792"]
+
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/attributes.pkg" [label="Customer\nservice automation", color="#6ca59c", shape="box", style="rounded,filled", fillcolor="#99c8c2"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/question-form.req" [label="Question\nform", color="#7dd396", style="filled", fillcolor="#a9e6bd"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/ticket-system.req" [label="Ticket\nsystem", color="#7dd396", style="filled", fillcolor="#a9e6bd"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/documents/design/ticket_screen_sketch.png" [label="design/ticket_screen_sketch.png", color="#a9e6bd"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/documents/design/ticket_screen_confirmation_sketch.png" [label="design/ticket_screen_confirmation_sketch.png", color="#a9e6bd"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/sales-force-automation/attributes.pkg" [label="Sales\nforce automation", color="#6ca59c", shape="box", style="rounded,filled", fillcolor="#99c8c2"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/sales-force-automation/provide-customer-info.req" [label="Provide\ncustomer info", color="#7dd396", style="filled", fillcolor="#a9e6bd"]
+
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo"->"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/attributes.pkg" [dir="back"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/attributes.pkg"->"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/question-form.req" [dir="back"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/attributes.pkg"->"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/ticket-system.req" [dir="back"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/ticket-system.req"->"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/documents/design/ticket_screen_sketch.png" [dir="back"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/customer-service-automation/ticket-system.req"->"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/documents/design/ticket_screen_confirmation_sketch.png" [dir="back"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo"->"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/sales-force-automation/attributes.pkg" [dir="back"]
+"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/sales-force-automation/attributes.pkg"->"/home/oliver/Documents/projects/reqy-site/notes/tutorial-repo/requirements/sales-force-automation/provide-customer-info.req" [dir="back"]
+}
