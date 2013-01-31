@@ -1,5 +1,6 @@
 Description: Online form where customers can submit tickets.
 Rationale: Ensure customers submit appropriate information by requireing all necassary fields are completed befor accepting submission.
+Scope: Must work with all latest browsers
 Status: approved
 Status reason: Form created and tested
 Approved by: jill

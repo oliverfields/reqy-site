@@ -1,2 +1,3 @@
 Description: Online sales data repository.
 Rationale: Allow sales team to manage contacts and opportunities.
+Scope: Focus on the basics, do not need everything and the kitchen sink.
