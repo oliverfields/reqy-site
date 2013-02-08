@@ -1,7 +1,7 @@
 Requirements management using *reqy* is briefly explained adding and updating requirements. This quick start provides a high level introduction to just that.
 
 .. attention::
-  The quick start tries to demonstrate basic use of *reqy*. Please ensure *reqy* is installed as per instructions in the INSTALL_ file before proceeding.
+  The quick start tries to demonstrate basic use of *reqy*. Clone from github with **$ git clone git://github.com/oliverfields/reqy.git**, then please ensure *reqy* is installed as per instructions in the INSTALL_ file before proceeding.
 
   .. _INSTALL: https://github.com/oliverfields/reqy/blob/master/INSTALL
 
@@ -31,10 +31,11 @@ The above created the following.
 
 * A requirement consisting of the file **my server/debian os** wich will contain the requirement attributes
 
-Both package and requirements must have **Description** and **Rationale** attributes set. Open the **attributes.pkg** file and add the following.
+Both package and requirements must have **Description**, **Rationale** and **Scope** attributes set. Open the **attributes.pkg** file and add the following.
 
 | Description: Web server for the new application
 | Rationale: Required for new application
+| Scope: Only serve HTTP, no HTTPS required
 
 Add something similarly inane to **my server/debian os**. Once done the repository will be in a working state.
 
