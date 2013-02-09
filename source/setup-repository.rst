@@ -106,4 +106,12 @@ And then add Jill the client.
 .. include:: ../notes/tutorial-repo/stakeholders/jill.sth
     :literal:
 
-We now have a working repository!
+
+Checking repository
+===================
+
+The repository can be checked to be in working order with the *check* mode, any errors found will be displayed.
+
+| $ reqy check
+
+We now have a fully working repository.
