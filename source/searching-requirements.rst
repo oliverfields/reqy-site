@@ -18,8 +18,14 @@ Searching with other tools
 
 Unix has a plethora of tools for sorting, searching and manipulating files, below are a few basic commands, but more info is only a search engine away.
 
-| $ find . -name '*bills*' # Finds all files containing 'bills' in the file name
+Finds all files containing 'bills' in the file name.
 
-| $ grep -R 'Title: Nice' * # List files containing the string 'Title: Nice'
+| $ find . -name '\*bills\*'
 
-| $ find . -name '*.req' -exec sed 's/^Status:\ elaboration$/Status: approved/' {} \; # Find *.req files and change status from elaboration to approved
+List files containing the string 'Title: Nice'.
+
+| $ grep -R 'Title: Nice' \*
+
+Find all .req files and change status from elaboration to approved.
+
+| $ find . -name '\*.req' -exec sed 's/^Status:\ elaboration$/Status:\ approved/' {} \;
