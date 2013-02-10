@@ -5,7 +5,3 @@ This tutorial will cover many common tasks that are performed during a project. 
 * `Generate artifacts <generate-artifacts.html>`_
 * `Searching requirements <searching-requirements.html>`_
 * `Change impact/traces <change-impact.html>`_
-* `Baseline requirements <baseline-requirements.html>`_
-
-
-
