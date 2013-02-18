@@ -1,7 +1,10 @@
-Reqy is a command line tool for managing requirements that are stored in a file based directory structure.
+====
+reqy
+====
 
-* `Command line use <command-line-use.html>`_
-* `Repository structure and files <repository-structure.html>`_
+----------------------------
+Project requirements manager
+----------------------------
 
 :Author: Oliver Fields <oliver@phnd.net>
 :Date:   2013-02-10
@@ -46,6 +49,10 @@ Modes
 *init*
 
   Create new repository in current directory.
+
+*filter status* <not> [approved|elaboration|implementation|rejected|postponed]
+
+  Filter requirements by status. Use 'not' to invert filter.
 
 *artifact* [all|estimate|graph|list|basiclist|planner|rtm]
 
@@ -94,6 +101,3 @@ Bugs and support
 ================
 
 Please see http://reqy.phnd.net or https://github.com/oliverfields/reqy
-=======
-.. attention::
-  Settings for all configuration files are also documented in the templates provided with reqy.
