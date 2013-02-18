@@ -92,17 +92,6 @@ Multiple documents can be specified by comma seperating them.
 | Documents: x.pdf, y.pdf
 
 
-Filter requirements
--------------------
-Requirements may be listed by status on the command line. The following examples illustrate this.
-
-| $ reqy filter status approved
-
-Use the **not** key word to do a negative filter.
-
-| $ reqy filter status not approved
-
-
 Generate artifacts
 ------------------
 
