@@ -15,6 +15,8 @@ estimate      project-estimation.ods              LibreOffice spreadsheet listin
 graph         overview_graph.dot                  Dot file for further generating visualization of traces(dependencies) between requirments        
 list          requirement-list.odt                LibreOffice text document listing all requirements and their details                             
 basiclist     requirement-basic-list.odt          Less verbose version of *list*                                                                   
+listrst       requirement-list.rst                Restructured text document listing all requirements and their details                             
+basiclistrst  requirement-basic-list.rst          Less verbose version of *listrst*                                                                   
 planner       export.planner                      Gnome Planner (project management tool) containing all requirements                              
 rtm           requitement-traceability-matrix.csv Spreadsheet listing requirements downwards, and columns showing the documents that trace to them 
 ============= =================================== =================================================================================================
@@ -26,3 +28,5 @@ To generate, say the requirement list artifact, run the following command, it wi
 Please note that some artifacts are intended as input for other programs and may need additional processing. For instance the planner file requires Gnome Planner whilst the overview graph must be passed to Dot for processing.
 
 | $ dot -Tpng -o overview_graph.png overview_graph.dot
+
+Restructured text artifacts can be further processed with tools such as *rst2pdf*, *rst2html* or *rst2odt*.
