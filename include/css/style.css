@@ -198,7 +198,7 @@ div.line-block div.line-block {
 border: none;
 }
 div.line-block div.line {
-font-family: mono-space;
+font-family: courier;
 font-size: 11px;
 margin-left: 1em;
 color: lime;
@@ -209,7 +209,7 @@ background-color: #eee;
 border: solid 2px #ccc;
 padding: .5em 0;
 border-radius: 5px;
-font-family: mono-space;
+font-family: courier;
 font-size: 11px;
 padding-left: 1em;
 color: #333;
