@@ -6,7 +6,7 @@ Finds all files containing 'bills' in the file name.
 
 Find all items with status approved, use *grep -v* to invert the search.
 
-| $ grep -R '^Status:\ approved$' *
+| $ grep -R '^Status:\\ approved$' *
 
 List files containing the string 'Title: Nice'.
 
