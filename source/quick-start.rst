@@ -31,11 +31,11 @@ The above created the following.
 
 * A requirement consisting of the file **my server/debian os** wich will contain the requirement attributes
 
-Both package and requirements must have **Description**, **Rationale** and **Scope** attributes set. Open the **attributes.pkg** file and add the following.
+Both package and requirements must have **Description**, **Rationale** and **Delineation** attributes set. Open the **attributes.pkg** file and add the following.
 
 | Description: Web server for the new application
 | Rationale: Required for new application
-| Scope: Only serve HTTP, no HTTPS required
+| Delineation: Only serve HTTP, no HTTPS required
 
 Add something similarly inane to **my server/debian os**. Once done the repository will be in a working state.
 

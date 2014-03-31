@@ -114,6 +114,8 @@ Postponed by
   Can only be set if status is postponed. Person who decided to postpone requirement
 Postponed on
   Can only be set if status is postponed
+Preconditions
+  Conditions that must be met to complete/start the requirement
 Priority
   Indicate how important the requirement is, see below
 Rationale - Mandatory
@@ -122,7 +124,7 @@ Rejected by - Mandatory, if status rejected
   Can only be set if status is rejected. Person that rejected requirement, must be valid stakeholder defined in the configuration
 Rejected on
   Can only be set if status is rejected. The date format is not configurable
-Scope - Mandatory
+Delineation - Mandatory
   Describe how the requirement is deliniated/limited
 Status
   See below for list of status codes

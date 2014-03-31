@@ -36,7 +36,7 @@ Further the requirements must be added to the respective packages.
 | $ reqy new req requirements/customer-service-automation/ticket-system
 | $ reqy new req requirements/sales-force-automation/provide-customer-info
 
-The packages and requiremnts need fleshing out, the following content is added to the files in the *requirements* directory. Both requirements and requirement packages must have at least a *Description*, *Rationale* and *Scope* attribute set.
+The packages and requiremnts need fleshing out, the following content is added to the files in the *requirements* directory. Both requirements and requirement packages must have at least a *Description*, *Rationale* and *Delineation* attribute set.
 
 .. warning::
   All attributes are specified as *<name>: <value>*. Value must be all on one line or subsequent lines must be indented by two spaces.
